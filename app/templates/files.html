@@ -4,7 +4,8 @@
     <style>
         .container {
           display: grid;
-          grid-columns: auto auto auto;
+          grid-template-columns: auto auto auto;
+          grid-gap: 20px;
           background-color: #2196F3;
           padding: 10px;
         }
@@ -20,12 +21,8 @@
     <div class="container">
     	{% for shot in shots %}
         	<div >
-        	    <ul>
-            	  	<li>
             	  	    <img class="grid-item" src="{{ url_for('static', filename='uploads/' + shot) }}" 
-            	  	    height="300" width="300" /> 
-            	  	</li>
-        	  	</ul>
+            	  	    height="350" width="350" /> 
         	</div>
     	{% endfor %}
     </div>

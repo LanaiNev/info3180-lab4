@@ -60,8 +60,7 @@ def  get_uploaded_images():
         for file in files:
             lst.append(os.path.join(subdir, file).split('/')[-1])
     return lst
-    
-print(get_uploaded_images())
+
     
     
 @app.route('/files')
